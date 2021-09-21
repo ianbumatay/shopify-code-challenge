@@ -15,8 +15,8 @@ export default class like extends Component {
 
     render() {
         return (
-            <div>
-                <button>{this.state.toggle ? "Like" : "Unlike"}</button>    
+            <div >
+                <button onClick={this.handleClick}>{this.state.toggled ? "Like" : "Unlike"}</button>    
             </div>
         )
     }
