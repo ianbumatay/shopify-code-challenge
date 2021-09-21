@@ -1,4 +1,5 @@
 import React from 'react'
+import Like from './like'
 
 export default function Photo({photo}) {
     return (
@@ -8,6 +9,7 @@ export default function Photo({photo}) {
             <h2>{photo.title}</h2>
             <h2>{photo.date}</h2>
             <p>{photo.explanation}</p>
+            <Like/>
         </div>
     )
 }
