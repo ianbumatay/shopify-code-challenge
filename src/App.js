@@ -1,7 +1,7 @@
 //import logo from './logo.svg'; 
 import React, {Component} from 'react'; 
 //import PhotoContainer from './photoContainer' 
-//import Photo from './photo'
+import Photo from './photo'
 import './App.css';
 
 class App extends Component {  
@@ -9,8 +9,7 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      // photos: [] 
-      photo: " "
+      photo: " ",
   }
 } 
 
@@ -29,10 +28,10 @@ componentDidMount(){
       <div className="App"> 
         <p>Test</p> 
         {/* <PhotoContainer photos={this.state.photos}/>    */}
-        {/* <Photo photo={this.photo}/> */} 
-        <section>
+        <Photo photo={this.state.photo} title={this.state.photo.title} explanation={this.state.photo.explanation} date={this.state.photo.date}/> 
+        {/* <section>
                 <img src={this.state.photo.url} alt="giant orange ball"/>
-        </section>
+        </section> */}
       </div>
     );
 
