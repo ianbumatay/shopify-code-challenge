@@ -1,19 +1,20 @@
 import React from 'react' 
+import Photo from './photo'
 
-export default function PhotoContainer(props) { 
+export default function PhotoContainer(props) {  
+
+    console.log(props)
 
 
-const diplayPhoto = () => {
-    return props.photo.map( photo => {
+const displayPhoto = (props) => {
+    return props.photos.map( photo => {
         return <Photo url={photo.url}/>
     })
 }
 
     return (
         <div> 
-            <> 
-            <section>{diplayPhoto}</section>
-            </>  
+            <section>{displayPhoto()}</section>
         </div>
     )
 }
