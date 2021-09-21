@@ -1,19 +1,11 @@
 import React from 'react'
 
-export default function PhotoContainer(props) { 
-
-
-const diplayPhoto = () => {
-    return props.photo.map( photo => {
-        return <Photo url={photo.url}/>
-    })
-}
-
+export default function Photo() {
     return (
-        <div> 
-            <> 
-            <section>{diplayPhoto}</section>
-            </>  
+        <div>
+            <section>
+                <img src={props.url} alt="giant orange ball"/>
+            </section>
         </div>
     )
 }
