@@ -9,6 +9,10 @@ class App extends Component {
     this.state = {
       photo: []
   }
+} 
+
+componentDidMount(){
+  //fetch api
 }
   
   
