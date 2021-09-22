@@ -1,6 +1,5 @@
-//import logo from './logo.svg'; 
+
 import React, {Component} from 'react'; 
-//import PhotoContainer from './photoContainer' 
 import Photo from './photo'
 import './App.css';
 
@@ -26,7 +25,6 @@ componentDidMount(){
   render(){ 
     return (
       <div className="App"> 
-        {/* <PhotoContainer photos={this.state}/>    */}
         <Photo photo={this.state.photo} 
                title={this.state.photo.title} 
                explanation={this.state.photo.explanation} 

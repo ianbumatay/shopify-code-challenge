@@ -13,7 +13,7 @@ export default function Photo({photo}) {
                 <Card.Body>
                     <h4>{photo.title} - {photo.date}</h4>
                     <Card.Text>
-                      <p>{photo.explanation}</p>
+                      {photo.explanation}
                     </Card.Text>
                 </Card.Body>
                 <Like/> 
