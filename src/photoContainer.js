@@ -8,7 +8,7 @@ export default function PhotoContainer(props) {
 
 const displayPhoto = (props) => {
     return props.photos.map( photo => {
-        return <Photo url={photo.url}/>
+        return <Photo url={photo.url} title={photo.title} explanation={photo.explanation} date={photo.date}/>
     })
 }
 
