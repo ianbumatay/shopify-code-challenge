@@ -9,7 +9,7 @@ export default function Photo({photo}) {
                 <Card.Title>
                    <h1>Spacestagram</h1> 
                 </Card.Title>
-                <Card.Img src={photo.url} alt="giant orange ball"/>
+                <Card.Img src={photo.url} alt="The sun captured rising behind a hill" title="giant orange ball"/>
                 <Card.Body>
                     <h4>{photo.title} - {photo.date}</h4>
                     <Card.Text>
